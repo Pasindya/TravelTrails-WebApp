@@ -1,5 +1,5 @@
-const mongoose = requier("mongoose");
-const Schema = mongoose.Schena;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const HotelSchema = new Schema({
     FirstName:{
@@ -53,7 +53,7 @@ const HotelSchema = new Schema({
 
     },
     ArrivalTime:{
-        type:TimeRanges,
+        type:String,
         required:true,
 
     },
@@ -63,7 +63,7 @@ const HotelSchema = new Schema({
 
     },
     DepartureTime:{
-        type:TimeRanges,
+        type:String,
         required:true,
 
     },
