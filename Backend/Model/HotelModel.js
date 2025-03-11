@@ -1,7 +1,7 @@
 const mongoose = requier("mongoose");
 const Schema = mongoose.Schena;
 
-const userSchema = new Schema({
+const HotelSchema = new Schema({
     FirstName:{
         type:String,
         required:true,
@@ -57,6 +57,33 @@ const userSchema = new Schema({
         required:true,
 
     },
+    DepartureDate:{
+        type:Date,
+        required:true,
+
+    },
+    DepartureTime:{
+        type:TimeRanges,
+        required:true,
+
+    },
+    NumberAdult:{
+        type:Number,
+        required:true,
+    },
+    Anydetail:{
+        type:String,
+        required:false,
+    }
+
+
+
     
 
 });
+
+ module.exports = mongoose.model(
+    "HotelModel",
+    HotelSchema
+
+)
