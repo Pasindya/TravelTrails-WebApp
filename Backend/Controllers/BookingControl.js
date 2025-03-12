@@ -19,6 +19,8 @@ const getAllBookings = async (req, res, next) =>{
 
 //data insert
 const addBookings  = async (req, res, next) =>{
+
+    const {firstName,lastName,streetAddress,streetAddress2,city,state,postalCode,contact,gmail,arrivalDate,arrivalTime,departureDate,departureTime,numberAdult,anydetail} = req.body;
     
 }
 

@@ -2,76 +2,76 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const BookingSchema = new Schema({
-    FirstName:{
+    firstName:{
         type:String,
         required:true,
 
     },
-    LastName:{
+    lastName:{
         type:String,
         required:true,
 
     },
-    StreetAddress:{
+    streetAddress:{
         type:String,
         required:true,
 
     },
-    StreetAddress2:{
+    streetAddress2:{
         type:String,
         required:false,
 
     },
-    City:{
+    city:{
         type:String,
         required:true,
 
     },
-    State:{
+    state:{
         type:String,
         required:true,
 
     },
-    PostalCode:{
+    postalCode:{
         type:String,
         required:false,
 
     },
-    Number:{
+    contact:{
         type:String,
         required:true,
 
     },
-    Gmail:{
+    gmail:{
         type:String,
         required:false,
 
     },
-    ArrivalDate:{
+    arrivalDate:{
         type:Date,
         required:true,
 
     },
-    ArrivalTime:{
+    arrivalTime:{
         type:String,
         required:true,
 
     },
-    DepartureDate:{
+    departureDate:{
         type:Date,
         required:true,
 
     },
-    DepartureTime:{
+    departureTime:{
         type:String,
         required:true,
 
     },
-    NumberAdult:{
+    numberAdult:{
         type:Number,
         required:true,
     },
-    Anydetail:{
+    anydetail:{
         type:String,
         required:false,
     }
