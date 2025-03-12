@@ -37,7 +37,7 @@ const BookingSchema = new Schema({
         required:false,
 
     },
-    contact:{
+    contactNo:{
         type:String,
         required:true,
 
