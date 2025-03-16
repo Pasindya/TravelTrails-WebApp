@@ -52,7 +52,7 @@ const userSchema = new Schema({
         required:true,
 
     },
-    ArrivalTime:{
+ ArrivalTime:{
         type:TimeRanges,
         required:true,
 
